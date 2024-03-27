@@ -19,11 +19,6 @@ pipeline {
         }
       }
     }
-    stage('Test') {
-      steps {
-        // Add test steps if applicable
-      }
-    }
     stage('Deploy') {
       steps {
         // Run Docker container
