@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        git '' // Clone the Git repository
+        git 'https://github.com/nileshsurya1994/nodejs-app.git' // Clone the Git repository
         script {
           def dockerfile = readFile('Dockerfile') // Read the Dockerfile
           writeFile file: 'Dockerfile', text: dockerfile // Write the Dockerfile to the workspace
